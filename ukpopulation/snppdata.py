@@ -75,6 +75,10 @@ class SNPPData:
         if np.isscalar(genders):
             genders = [genders]
 
+        # Handle problem with empty list not being recognised as Null, was causing problem in utils.trim_range() below
+        if not years:
+            years = None
+
         countries = utils.country(geog_codes)
 
         # TODO fix incorrect assumption is that all countries have the same year range
