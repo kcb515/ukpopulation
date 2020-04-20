@@ -5,8 +5,13 @@ sudo: false
 language: python
 python: 
   - "3.6"
+<<<<<<< HEAD
   - "3.7"
   - "3.8"
+=======
+  - "3.7" 
+  - "3.8" 
+>>>>>>> fe17e5e6b12d7879455d1c2d85ccc956af3dc5da
 
 install:
   # workaround for 3.7-dev build error: ValueError: bad marshal data (unknown type code)
