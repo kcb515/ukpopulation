@@ -5,13 +5,8 @@ sudo: false
 language: python
 python: 
   - "3.6"
-<<<<<<< HEAD
-  - "3.7"
-  - "3.8"
-=======
   - "3.7" 
   - "3.8" 
->>>>>>> fe17e5e6b12d7879455d1c2d85ccc956af3dc5da
 
 install:
   # workaround for 3.7-dev build error: ValueError: bad marshal data (unknown type code)
@@ -23,14 +18,12 @@ script:
 
 warnings_are_errors: false
 
-# matrix:
-#   allow_failures:
-#     - python: "3.7-dev"
+  # matrix:
+  #   allow_failures:
+  #     - python: "3.7-dev"
 
 notifications:
   email:
     on_success: change
     on_failure: change
   slack: spenser-workspace:QzyXfMnQd5tUJaFZPK6Psl4M
-
-
