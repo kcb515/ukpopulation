@@ -165,7 +165,7 @@ class SNPPData:
 
             (pre_range, in_range) = utils.split_range(year_range, npp.min_year() - 1)
             # for any years prior to NPP we just use the SNPP data as-is (i.e. "ppp")
-	    pre_data = self.filter(geog_code, pre_range) if pre_range else pd.DataFrame()
+            pre_data = self.filter(geog_code, pre_range) if pre_range else pd.DataFrame()
             
             if len(pre_data) > 0:
                 print("WARNING: variant {} not applied for years {} that predate the NPP data".format(variant_name,
